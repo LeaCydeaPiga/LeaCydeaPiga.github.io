@@ -71,14 +71,14 @@ const displayTitans = async () => {
 
   // Map of titan IDs to custom images
   const customImages = {
-      1: 'https://images.wixmp.com/f/84dc13b7-a2e7-4b45-83ec-311e72e82900/dej1e90-a3f80962-7d67-4e63-893d-6178548340cb.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg0ZGMxM2I3LWEyZTctNGI0NS04M2VjLTMxMWU3MmU4MjkwMFwvZGVqMWU5MC1hM2Y4MDk2Mi03ZDY3LTRlNjMtODkzZC02MTc4NTQ4MzQwY2IucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.yVYc_RmHtn7dAJ_z_CzDZSAc4DdHXIDAY2LXe_OXEoo',
-      3: 'https://www.pngmart.com/files/19/Anime-Mikasa-PNG-Transparent-Image.png',
-      5: 'https://i.pinimg.com/originals/c7/63/ef/c763efce55a7807888323e1dbfb31d82.jpg',
-      // Add more custom images here for other titan IDs
+      1: 'https://www.seekpng.com/png/full/234-2347840_titan-png.png',
+      3: 'https://i.pinimg.com/originals/e3/96/64/e396646409d4b177719f6e11f252f68a.png',
+      5: 'https://pnghq.com/wp-content/uploads/armored-titan-png-full-hd-35876.png',
+    
   };
 
-  // List of titan IDs to fetch from the API
-  const titanIds = [1, 2, 3]; // Example titan IDs, add more as needed
+
+  const titanIds = [1, 3, 5];
 
   for (const id of titanIds) {
       // Fetch data from the API
