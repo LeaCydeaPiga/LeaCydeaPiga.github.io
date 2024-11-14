@@ -68,37 +68,47 @@ window.onload = displayCharacters;
 const displayTitans = async () => {
     const titansContainer = document.getElementById('titanContainer');
 
+    // Map of titan IDs to custom images
+    const customImages = {
+        1: 'https://www.seekpng.com/png/full/234-2347840_titan-png.png',
+        3: 'https://i.pinimg.com/originals/e3/96/64/e396646409d4b177719f6e11f252f68a.png',
+        5: 'img/attack.png',
+      
+    };
+
     // List of titan IDs to fetch from the API
-    const titanIds = [1]; // Example titan ID
+    const titanIds = [1, 3, 5]; // Example titan IDs, add more as needed
 
     for (const id of titanIds) {
-        try {
-            const response = await fetch(`https://api.attackontitanapi.com/titans/${id}`);
-            const titan = await response.json();
+        // Fetch data from the API
+        const response = await fetch(`https://api.attackontitanapi.com/titans/${id}`);
+        const titan = await response.json();
 
-            // Create a card element for each titan
-            const titanCard = document.createElement('div');
-            titanCard.classList.add('col-md-4', 'mb-4', 'd-flex', 'justify-content-center');
+        // Use the custom image if available, otherwise fallback to API image
+        const imageUrl = customImages[id] || titan.img || 'default-image-url.jpg';
 
-            titanCard.innerHTML = `
-                <div class="card card-custom" style="width: 18rem;">
-                    <img src="${titan.img || 'default-image-url.jpg'}" class="card-img-top card-img-custom" alt="${titan.name || 'Titan'}">
-                    <div class="card-body text-center">
-                        <h5 class="card-title card-title-custom bebas-neue-regular font-24">${titan.name || 'Name not available'}</h5>
-                        <p class="card-text card-text-custom poppins-thin"><span class="poppins-regular">Power: </span>${titan.power || 'No power available'}</p>
-                        <p class="card-text card-text-species poppins-regular">${titan.species || 'Species not available'}</p>
-                    </div>
+        // Create a card element for each titan
+        const titanCard = document.createElement('div');
+        titanCard.classList.add('col-md-4', 'mb-4', 'd-flex', 'justify-content-center');
+
+        titanCard.innerHTML = `
+            <div class="card card-custom" style="width: 18rem;">
+                <img src="${imageUrl}" class="card-img-top card-img-custom" alt="${titan.name || 'Titan'}">
+                <div class="card-body text-center">
+                    <h5 class="card-title card-title-custom bebas-neue-regular font-24">${titan.name || 'Name not available'}</h5>
+                    <p class="card-text card-text-custom poppins-thin"><span class="poppins-regular">Power: </span>${titan.power || 'No power available'}</p>
+                    <p class="card-text card-text-species poppins-regular">${titan.species || 'Species not available'}</p>
                 </div>
-            `;
+            </div>
+        `;
 
-            titansContainer.appendChild(titanCard);
-        } catch (error) {
-            console.error(`Error fetching titan with ID ${id}:`, error);
-        }
+        titansContainer.appendChild(titanCard);
     }
 };
  
+// Call the displayTitans function to load titans when the page is ready
 displayTitans();
+
 
 
 document.getElementById('link-characters').addEventListener('click', function(event) {

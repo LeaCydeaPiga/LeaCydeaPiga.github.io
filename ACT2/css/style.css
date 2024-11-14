@@ -138,6 +138,13 @@ body {
     color: #333;
 }
 
+
+a {
+    text-decoration: none;
+    color: #bfbfbf;
+
+}
+
 #characters {
     background-color: #262626;
 
@@ -237,17 +244,12 @@ body {
 
 
 
-a {
-    text-decoration: none;
-    color: #bfbfbf;
 
-}
 
 
 .titanBox {
-    display: none; /* Initially hidden */
+    display: none;
     padding: 30px;
-    background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
