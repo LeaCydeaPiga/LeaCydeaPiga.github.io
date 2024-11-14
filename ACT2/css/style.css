@@ -1,0 +1,244 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-24 {
+    font-size: 24px;
+}
+
+.font-30 {
+    font-size: 30px;
+}
+
+.font-60 {
+    font-size: 60px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('https://images.wallpapersden.com/image/download/attack-on-titan-2-colossal-titan_a2ZoZWqUmZqaraWkpJRsa21lrWloZ2U.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    transition: background-size 0.2s ease-in-out;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#home img {
+    width: auto;
+    max-width: 100%;
+}
+
+.btn-custom {
+    background-color: #d3d3d3;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #bfbfbf;
+}
+
+@media (max-width: 768px) {
+    .btn-custom {
+        border-radius: 8px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-custom {
+        border-radius: 8px;
+        font-size: 20px;
+    }
+}
+
+#content {
+
+    background: radial-gradient(circle, rgb(62, 62, 62), #262626, #262626);
+    padding: 20px;
+    text-align: center;
+}
+
+.horizontal-line {
+    width: 50%;
+    height: 2px;
+    margin: 0 auto;
+    background: linear-gradient(to right, transparent, white, transparent);
+}
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.marquee-text {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+    font-size: 25em;
+    background: linear-gradient(to bottom right, #ebe5e5, #443e3e);
+    background-clip: text;
+    color: transparent;
+}
+
+@media (max-width: 768px) {
+    .marquee-text {
+        font-size: 25em;
+    }
+}
+
+@media (max-width: 576px) {
+    .marquee-text {
+        font-size: 15em;
+    }
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(95%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#content h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#characters {
+    background-color: #262626;
+
+}
+
+
+.card-custom {
+    position: relative;
+    background-color: #373838;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 20rem;
+    overflow: visible;
+    transition: transform 0.3s ease;
+}
+
+.card-img-custom {
+    width: 100%;
+    margin-top: -30px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.card-title-custom,
+.card-text-custom,
+.card-text-species {
+    color: #faf6f6;
+}
+
+
+.card-custom:hover {
+    transform: scale(1.05);
+}
+
+
+.card-custom:hover .card-img-custom {
+    filter: blur(0.5px);
+    transform: scale(1.1);
+}
+
+
+.card-custom:hover .card-body {
+    background-color: rgba(0, 0, 0, 0.433);
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.card-custom:hover .card-title-custom,
+.card-custom:hover .card-text-custom,
+.card-custom:hover .card-text-species {
+    color: #fff;
+
+}
+
+
+.card-text-custom,
+.card-text-species {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+
+.card-custom:hover .card-text-custom,
+.card-custom:hover .card-text-species {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.card-body {
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.charactersBox .row {
+    --bs-gutter-x: -9.5rem;
+}
+
+@media (max-width: 1050px) {
+    .charactersBox .row {
+        --bs-gutter-x: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .charactersBox .row {
+        --bs-gutter-x: 0.5rem;
+    }
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: #bfbfbf;
+
+}
