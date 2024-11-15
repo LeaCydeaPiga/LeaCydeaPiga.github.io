@@ -42,19 +42,20 @@ html, body {
 #home {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('img/aot_bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('https://leacydeapiga.github.io/ACT2/img/aot_bg.jpg');
     background-position: center center;
     background-attachment: fixed;
+    background-size: cover; 
     transition: background-size 0.2s ease-in-out;
     align-items: center;
     padding-top: 50px;
-    
 }
 
 #home img {
     width: auto;
     max-width: 100%;
 }
+
 
 .btn-custom {
     background-color: #d3d3d3;
