@@ -11,7 +11,13 @@ const displayTitanDetails = async () => {
         const response = await fetch(`https://api.attackontitanapi.com/titans/${titanId}`);
         const titan = await response.json();
 
-        document.getElementById('titanImage') = titan.img || 'default-image-url.jpg';
+        // Trim the titan image URL if it exists
+        let titanImageUrl = titan.img || 'default-image-url.jpg';
+        if (titanImageUrl.includes('.png')) {
+            titanImageUrl = titanImageUrl.split('.png')[0] + '.png';
+        }
+
+        document.getElementById('titanImage').src = titanImageUrl;
         document.getElementById('titanName').textContent = titan.name || 'No name available';
         document.getElementById('titanDescription').textContent = titan.description || 'No description available';
         document.getElementById('titanHeight').textContent = titan.height || 'No height information available';
