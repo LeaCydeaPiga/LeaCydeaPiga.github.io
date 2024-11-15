@@ -32,8 +32,11 @@
     font-size: 60px;
 }
 
-body {
-    overflow-x: hidden;
+html, body {
+    overflow-x: hidden;  
+    margin: 0;           
+    padding: 0;          
+    width: 100%;    
 }
 
 #home {
@@ -46,6 +49,7 @@ body {
     transition: background-size 0.2s ease-in-out;
     align-items: center;
     padding-top: 50px;
+    
 }
 
 #home img {
@@ -72,6 +76,7 @@ body {
         border-radius: 8px;
         font-size: 30px;
     }
+
 }
 
 @media (max-width: 576px) {
@@ -139,12 +144,6 @@ body {
 }
 
 
-a {
-    text-decoration: none;
-    color: #bfbfbf;
-
-}
-
 #characters {
     background-color: #262626;
 
@@ -159,6 +158,9 @@ a {
     width: 20rem;
     overflow: visible;
     transition: transform 0.3s ease;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .card-img-custom {
@@ -175,6 +177,7 @@ a {
 .card-text-custom,
 .card-text-species {
     color: #faf6f6;
+    padding: 5px;
 }
 
 
@@ -190,12 +193,11 @@ a {
 
 
 .card-custom:hover .card-body {
-    background-color: rgba(0, 0, 0, 0.433);
     color: #fff;
     transition: background-color 0.3s ease;
 }
 
-.card-custom:hover .card-title-custom,
+/* .card-custom:hover .card-title-custom,
 .card-custom:hover .card-text-custom,
 .card-custom:hover .card-text-species {
     color: #fff;
@@ -215,7 +217,7 @@ a {
 .card-custom:hover .card-text-species {
     visibility: visible;
     opacity: 1;
-}
+} */
 
 
 .card-body {
@@ -241,14 +243,34 @@ a {
     }
 }
 
-
-
-
-a {
+#linkCharacters{
     text-decoration: none;
-    color: #bfbfbf;
+    color: #adadad; 
 
 }
+
+#linkTitans {
+    text-decoration: none;
+    color: #adadad; 
+}
+
+@media (max-width: 576px){
+    #linkCharacters,
+    #linkTitans { font-size: 30px;
+
+    }
+}
+
+#linkCharacters.active,
+#linkTitans.active {
+    color: #f0f0f0; 
+}
+
+#linkCharacters:hover,
+#linkTitans.hover {
+    color: #f0f0f0; 
+}
+
 
 .titanBox {
     display: none;
@@ -256,4 +278,55 @@ a {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+}
+
+.button {
+    background-color: #262626;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 30px;
+}
+
+.button:hover {
+    background-color: #3d3d3d;
+    color: white;
+}
+
+
+#footer {
+    background-color: #1a1a1a; 
+    color: #f0f0f0; 
+    position: relative;
+}
+
+.footer-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-text {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+
+.footer-logo {
+    max-width: 100%; 
+    height: auto;   
+    width: 100px;    
+    margin-bottom: 20px; 
+}
+
+
+@media (max-width: 768px) {
+    .footer-logo {
+        width: 50px; 
+    }
 }

@@ -74,9 +74,7 @@ const displayTitans = async () => {
       1: 'https://www.seekpng.com/png/full/234-2347840_titan-png.png',
       3: 'https://i.pinimg.com/originals/e3/96/64/e396646409d4b177719f6e11f252f68a.png',
       5: 'https://pnghq.com/wp-content/uploads/armored-titan-png-full-hd-35876.png',
-    
   };
-
 
   const titanIds = [1, 3, 5];
 
@@ -85,10 +83,10 @@ const displayTitans = async () => {
       const response = await fetch(`https://api.attackontitanapi.com/titans/${id}`);
       const titan = await response.json();
 
-      // Use the custom image if available, otherwise fallback to API image
+      // Use the custom image if available
       const imageUrl = customImages[id] || titan.img || 'default-image-url.jpg';
 
-      // Create a card element for each titan
+      // card element for each titan
       const titanCard = document.createElement('div');
       titanCard.classList.add('col-md-4', 'mb-4', 'd-flex', 'justify-content-center');
 
@@ -97,8 +95,7 @@ const displayTitans = async () => {
               <img src="${imageUrl}" class="card-img-top card-img-custom" alt="${titan.name || 'Titan'}">
               <div class="card-body text-center">
                   <h5 class="card-title card-title-custom bebas-neue-regular font-24">${titan.name || 'Name not available'}</h5>
-                  <p class="card-text card-text-custom poppins-thin"><span class="poppins-regular">Power: </span>${titan.power || 'No power available'}</p>
-                  <p class="card-text card-text-species poppins-regular">${titan.species || 'Species not available'}</p>
+                  <button onclick="redirectToDetails(${id})" class ="button">View Details</button>
               </div>
           </div>
       `;
@@ -107,18 +104,36 @@ const displayTitans = async () => {
   }
 };
 
+// Function to redirect to the details page with the titan ID as a query parameter
+const redirectToDetails = (titanId) => {
+  window.location.href = `details.html?titanId=${titanId}`;
+};
+
 // Call the displayTitans function to load titans when the page is ready
 displayTitans();
 
 
-document.getElementById('link-characters').addEventListener('click', function(event) {
-event.preventDefault(); 
-document.querySelector('.charactersBox').style.display = 'block'; 
-document.querySelector('.titanBox').style.display = 'none'; 
+
+document.addEventListener('DOMContentLoaded', () => {
+  toggleTab('linkCharacters', '.charactersBox', '.titanBox');
 });
 
-document.getElementById('link-titans').addEventListener('click', function(event) {
-event.preventDefault(); 
-document.querySelector('.charactersBox').style.display = 'none';
-document.querySelector('.titanBox').style.display = 'block'; 
+function toggleTab(activeLinkId, activeBoxSelector, inactiveBoxSelector) {
+  document.querySelector(activeBoxSelector).style.display = 'block';
+  document.querySelector(inactiveBoxSelector).style.display = 'none';
+  
+  document.getElementById(activeLinkId).classList.add('active');
+  document.querySelectorAll(`#${activeLinkId === 'linkCharacters' ? 'linkTitans' : 'linkCharacters'}`).forEach(link => {
+    link.classList.remove('active');
+  });
+}
+
+document.getElementById('linkCharacters').addEventListener('click', function(event) {
+  event.preventDefault();
+  toggleTab('linkCharacters', '.charactersBox', '.titanBox');
+});
+
+document.getElementById('linkTitans').addEventListener('click', function(event) {
+  event.preventDefault();
+  toggleTab('linkTitans', '.titanBox', '.charactersBox');
 });
