@@ -32,6 +32,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #262626;
+    flex-direction: column;
 }
 
 .navbar {
@@ -62,6 +63,15 @@ body {
     color: white;
 }
 
+.container {
+    width: 100%;
+    max-width: 1200px;  /* Adjust to fit your design */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .character-card {
     background-color: #373838;
     border-radius: 20px;
@@ -72,15 +82,7 @@ body {
     margin-top: 20px;
     width: 100%;
     flex-wrap: wrap;
-}
-
-.banner {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 150px;
-    border-radius: 20px;
+    justify-content: center;  /* Center content horizontally */
 }
 
 .character-card:hover {
@@ -132,11 +134,14 @@ body {
 @media (max-width: 576px) {
     .character-card {
         flex-direction: column;
+        justify-content: center;  /* Ensure column direction is centered */
+        align-items: center;  /* Ensure center alignment */
     }
 
     .description {
         margin-top: 20px;
         padding: 10px;
+        text-align: center;  /* Center the text on smaller screens */
     }
 
     .image-container {
