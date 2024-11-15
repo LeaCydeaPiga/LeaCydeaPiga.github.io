@@ -42,8 +42,7 @@ html, body {
 #home {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('https://images.wallpapersden.com/image/download/attack-on-titan-2-colossal-titan_a2ZoZWqUmZqaraWkpJRsa21lrWloZ2U.jpg');
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('img/aot_bg.jpg');
     background-position: center center;
     background-attachment: fixed;
     transition: background-size 0.2s ease-in-out;

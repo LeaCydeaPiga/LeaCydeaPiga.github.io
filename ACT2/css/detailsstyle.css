@@ -157,3 +157,7 @@ body {
         font-size: 12px;
     }
 }
+
+.row{
+    --bs-gutter-x: -0.5rem;
+}
