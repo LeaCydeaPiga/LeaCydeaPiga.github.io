@@ -11,7 +11,7 @@ const displayTitanDetails = async () => {
         const response = await fetch(`https://api.attackontitanapi.com/titans/${titanId}`);
         const titan = await response.json();
 
-        document.getElementById('titanImage').src = 'https://static.wikia.nocookie.net/shingekinokyojin/images/a/ae/Attack_Titan_%28Anime%29_character_image_%28Eren_Jaeger%29.png/revision/latest/scale-to-width-down/350?cb=20170513212951';
+        document.getElementById('titanImage').img = titan.img || 'default-image-url.jpg';
         document.getElementById('titanName').textContent = titan.name || 'No name available';
         document.getElementById('titanDescription').textContent = titan.description || 'No description available';
         document.getElementById('titanHeight').textContent = titan.height || 'No height information available';
