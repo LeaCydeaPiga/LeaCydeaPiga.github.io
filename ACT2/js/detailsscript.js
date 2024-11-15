@@ -11,7 +11,7 @@ const displayTitanDetails = async () => {
         const response = await fetch(`https://api.attackontitanapi.com/titans/${titanId}`);
         const titan = await response.json();
 
-        document.getElementById('titanImage').img = titan.img || 'default-image-url.jpg';
+        document.getElementById('titanImage') = titan.img || 'default-image-url.jpg';
         document.getElementById('titanName').textContent = titan.name || 'No name available';
         document.getElementById('titanDescription').textContent = titan.description || 'No description available';
         document.getElementById('titanHeight').textContent = titan.height || 'No height information available';
