@@ -27,10 +27,13 @@ const customImages = {
 188: 'https://i1.wp.com/images.wikia.com/shingekinokyojin/images/4/48/Eren.png',
 2: 'https://www.pngmart.com/files/19/Anime-Mikasa-PNG-Transparent-Image.png',
 1: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83ec-311e72e82900/dej1e90-a3f80962-7d67-4e63-893d-6178548340cb.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg0ZGMxM2I3LWEyZTctNGI0NS04M2VjLTMxMWU3MmU4MjkwMFwvZGVqMWU5MC1hM2Y4MDk2Mi03ZDY3LTRlNjMtODkzZC02MTc4NTQ4MzQwY2IucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.yVYc_RmHtn7dAJ_z_CzDZSAc4DdHXIDAY2LXe_OXEoo',
+5: 'https://i.pinimg.com/originals/03/7d/16/037d16f91d7d3dc839f6a6321650e8f0.png',
+8: 'https://pnghq.com/wp-content/uploads/pnghq.com-hange-png-5154-download-1536x1345.png',
+3: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83ec-311e72e82900/ddfxnh6-bcb7e655-ad9f-445d-bdd1-3eeeaec6eec4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg0ZGMxM2I3LWEyZTctNGI0NS04M2VjLTMxMWU3MmU4MjkwMFwvZGRmeG5oNi1iY2I3ZTY1NS1hZDlmLTQ0NWQtYmRkMS0zZWVlYWVjNmVlYzQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JxUyCoZyWerZfrDo5fyo3KeMzLCeldQ8_1kbTIDH9AI'
 };
 
 // List of character IDs to fetch from the API
-const characterIds = [188, 2, 1];
+const characterIds = [188, 2, 1, 5, 8, 3];
 
 for (const id of characterIds) {
 try {
