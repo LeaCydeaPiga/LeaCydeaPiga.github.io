@@ -105,8 +105,8 @@ body {
 }
 
 .image-container {
-    flex: 0 0 300px; /* Fixed width for the image container */
-    max-width: 100%; /* Ensures responsiveness */
+    flex: 0 0 300px; 
+    max-width: 100%; 
     overflow: hidden;
     border-radius: 20px 0 0 20px;
 }
