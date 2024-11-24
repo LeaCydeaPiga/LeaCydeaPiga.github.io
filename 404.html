@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/logo.png"
-    type="image/x-icon">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- BOXICONS -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- typing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,7 +56,7 @@
             color: var(--text-color);
         }
 
-        .fontBig{
+        .fontBig {
             font-family: "Big Shoulders Stencil Text", sans-serif;
             font-size: 30px;
         }
@@ -309,7 +311,7 @@
     <!-- HEADER -->
     <header class="header">
         <nav class="nav container p-4 fontBig">
-            <a href="#" class="navLogo">
+            <a href="https://leacydeapiga.github.io/" class="navLogo">
                 LeaCydeaPiga
             </a>
         </nav>
@@ -321,11 +323,13 @@
             <div class="homeContainer container">
                 <div class="homeData">
                     <span class="homeSubtitle">Error 404</span>
-                    <h1 class="homeTitle">Hey Buddy, I'm Zagu</h1>
+                    <h1 class="homeTitle">
+                        <span class="typed1"></span>
+                    </h1>
                     <p class="homeDescription">
-                        We sniffed everywhere, but this page ran off with the squirrels!
+                        I sniffed everywhere, but this page ran off with the squirrels!
                     </p>
-                    <a href="#" class="homeButton">
+                    <a href="https://leacydeapiga.github.io/" class="homeButton">
                         Go Home
                     </a>
                 </div>
@@ -361,7 +365,23 @@
 
         sr.reveal(`.homeData`, { origin: 'top', delay: 400 })
         sr.reveal(`.homeImg`, { origin: 'bottom', delay: 600 })
-        sr.reveal(`.homeFooter`, { origin: 'bottom', delay: 800 })</script>
+        sr.reveal(`.homeFooter`, { origin: 'bottom', delay: 800 })
+
+        // Typing Effect
+        var typed = new Typed('.typed1', {
+            strings: [
+                "I'm Zagu",
+                "I'm a baby"
+            ],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+
+
+    </script>
+
+
 </body>
 
 </html>
