@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>House of Burgers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- animate -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+    <script src="https://kit.fontawesome.com/96d8b59060.js" crossorigin="anonymous"></script>
+    <!-- logo -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" type="image/x-icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-theme="light">
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img
+                    src="https://th.bing.com/th/id/R.abb18eea3fe18e97c4d5e3e7aae91e23?rik=9N1y%2fBlx%2f%2bouIA&riu=http%3a%2f%2fwww.pngplay.com%2fwp-content%2fuploads%2f2%2fBurger-Transparent-PNG.png&ehk=drgm8npLkJfZksaTsM6sBwVLjyeuvAIvzzx6Cuf6k5I%3d&risl=&pid=ImgRaw&r=0"
+                    alt="" style="height: 40px; width: 40px;"> <span class="caprasimo-regular font-18"> House of
+                    Burgers</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body prompt-bold">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 offcanvas-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home" id="home-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#special" id="special-link">Special</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu" id="new-link">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#info" id="about-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="cart-link"><span
+                                    class="material-symbols-outlined">shopping_cart</span></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- Video Banner  and home section start-->
+    <section id="home">
+        <div class="vidContainer">
+            <iframe class="video"
+                src="https://www.youtube.com/embed/L5GQdVFGMBQ?autoplay=1&mute=1&controls=0&loop=1&playlist=L5GQdVFGMBQ"
+                title="YouTube video player" frameborder="0"
+                allow="autoplay; encrypted-media; clipboard-write; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="bannerColor"></div>
+        <div class="bannerTitle caprasimo-regular font-100" data-aos="fade-up" data-aos-duration="1400">
+            House of Burgers
+        </div>
+        <div class="banner">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="bannerText">
+                        <h2 class="titan-one-regular font-50 mt-5">Special Offer !</h2>
+                        <p class="poppins-regular font-20">Discover Modern Culinary Delights</p>
+                        <p class="poppins-regular font-20">Experience the fusion of flavors in Hamburgers and Steaks!
+                        </p>
+                        <div class="bannerBtn">
+                            <a href="#" class="buyNowBtn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video Banner  and home section end-->
+    <!-- Seasonal special section start -->
+    <section id="special">
+        <div class="seasonal">
+            <div class="d-flex justify-content-center mt-5">
+                <div class="horizontal3"></div>
+                <h1 class="titan-one-regular font-50">Seasonal Special</h1>
+                <div class="horizontal3"></div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <h3 class="poppins-regular font-18 fw-bold">Enjoy The Warm and Fall Harvest Burger</h3>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-md-4 one mt-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800">
+                        <img src="https://i.pinimg.com/564x/79/d0/5b/79d05b2c1235436c5f34400ed01fc66a.jpg"
+                            alt="Burger Image 1" class="image-container">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h5 class="cardName titan-one-regular mt-3">Crispy Chicken Burger</h5>
+                            <div class="orderNow">
+                                <a href="#" class="btn btn-custom mt-2">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 two mt-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_632/da6d3d114948071.604681b0d0a8a.jpg"
+                            alt="Burger Image 1" class="image-container">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h5 class="cardName  titan-one-regular mt-3">Flame Kiss Fiesta Burger</h5>
+                            <div class="orderNow">
+                                <a href="#" class="btn btn-custom mt-2">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 three mt-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800">
+                        <img src="https://i.pinimg.com/564x/67/d6/ba/67d6bac0b8ecf23356f6a605a7a91f6a.jpg"
+                            alt="Burger Image 1" class="image-container">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h5 class="cardName  titan-one-regular mt-3">Magic Mushroom Delight</h5>
+                            <div class="orderNow">
+                                <a href="#" class="btn btn-custom mt-2">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 four mt-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800">
+                        <img src="https://i.pinimg.com/564x/76/9d/01/769d0181ce354b62c4e88f623b46a63a.jpg"
+                            alt="Burger Image 1" class="image-container">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h5 class="cardName  titan-one-regular mt-3">Sizzling Symphony Burger</h5>
+                            <div class="orderNow">
+                                <a href="#" class="btn btn-custom mt-2">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 five mt-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800">
+                        <img src="https://i.pinimg.com/474x/aa/fd/f5/aafdf5a4fcdf68a2c1896588bac67630.jpg"
+                            alt="Burger Image 1" class="image-container">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h5 class="cardName  titan-one-regular mt-3"> Savoryy SPICY Extreme Sliders </h5>
+                            <div class="orderNow">
+                                <a href="#" class="btn btn-custom mt-2">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 six mt-4">
+                    <div class="card" data-aos="fade-up" data-aos-duration="800">
+                        <img src="https://i.pinimg.com/564x/8a/ea/85/8aea85cff0a280ba4eb3c412a5d4c192.jpg"
+                            alt="Burger Image 1" class="image-container">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <h5 class="cardName  titan-one-regular mt-3">Bold BBQ Bonanza Burgerr</h5>
+                            <div class="orderNow">
+                                <a href="#" class="btn btn-custom mt-2">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seasonal special section end -->
+    <!-- section 3 Menu contents -->
+    <section id="menu">
+        <div class="menuBoard">
+            <div class="d-flex justify-content-center mt-5">
+                <div class="horizontal3"></div>
+                <h1 class="titan-one-regular font-50">Menu</h1>
+                <div class="horizontal3"></div>
+            </div>
+        </div>
+        <div class="menuContainer p-3 ps-4">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 mt-4 d-flex justify-content-center align-items-center"
+                    data-aos="fade-up" data-aos-duration="800">
+                    <div class="menuCard d-flex flex-column py-3 pe-3">
+                        <div class="menuCardBody d-flex flex-column justify-content-end align-items-end ">
+                            <h5 class="card-title titan-one-regular">Qpound Chicken Burger</h5>
+                            <p class="card-text poppins-regular">Cheesy burger with Qpound Chicken</p>
+                            <p class="card-text prompt-bold font-20 mt-4 ">Php 100</p>
+                        </div>
+                        <img src="https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG96717.png"
+                            class="menuCardOverlay" alt="Burger Overlay">
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 mt-4 d-flex justify-content-center align-items-center"
+                    data-aos="fade-up" data-aos-duration="800">
+                    <div class="menuCard">
+                        <div class="menuCardBody d-flex flex-column justify-content-right align-items-right pt-3 pe-3">
+                            <h5 class="card-title titan-one-regular">Cheesy Burger</h5>
+                            <p class="card-text poppins-regular">Cheesy burger with three types of cheese</p>
+                            <p class="card-text prompt-bold font-20 mt-4 ">Php 125</p>
+                        </div>
+                        <img src="https://png.pngtree.com/png-clipart/20230502/original/pngtree-hot-cheesy-burger-isolated-on-transparent-background-png-image_9133351.png"
+                            class="menuCardOverlay" alt="Burger Overlay">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mt-4 d-flex justify-content-center align-items-center"
+                    data-aos="fade-up" data-aos-duration="800">
+                    <div class="menuCard">
+                        <div class="menuCardBody d-flex flex-column justify-content-right align-items-right pt-3 pe-3">
+                            <h5 class="card-title titan-one-regular">Regular Burger</h5>
+                            <p class="card-text poppins-regular">back to basic burger</p>
+                            <p class="card-text prompt-bold font-20 mt-4 ">Php 100</p>
+                        </div>
+                        <img src="https://www.freepnglogos.com/uploads/burger-png/burger-png-transparent-images-download-clip-art-30.png"
+                            class="menuCardOverlay" alt="Burger Overlay">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mt-4 d-flex justify-content-center align-items-center"
+                    data-aos="fade-up" data-aos-duration="800">
+                    <div class="menuCard">
+                        <div class="menuCardBody d-flex flex-column justify-content-right align-items-right pt-3 pe-3">
+                            <h5 class="card-title titan-one-regular">Double Beef Burger</h5>
+                            <p class="card-text poppins-regular">Cheesy burger with double beef </p>
+                            <p class="card-text prompt-bold font-20 mt-4 ">Php 100</p>
+                        </div>
+                        <img src="https://purepng.com/public/uploads/large/purepng.com-burgersandwhichfoodbreadcaviarburgerdelicious-21526117612dsith.png"
+                            class="menuCardOverlay" alt="Burger Overlay">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mt-4 d-flex justify-content-center align-items-center"
+                    data-aos="fade-up" data-aos-duration="800">
+                    <div class="menuCard">
+                        <div class="menuCardBody d-flex flex-column justify-content-right align-items-right pt-3 pe-3">
+                            <h5 class="card-title titan-one-regular">Double Beef Burger</h5>
+                            <p class="card-text poppins-regular">Cheesy burger with double beef </p>
+                            <p class="card-text prompt-bold font-20 mt-4 ">Php 100</p>
+                        </div>
+                        <img src="https://purepng.com/public/uploads/large/purepng.com-burgersandwhichfoodbreadcaviarburgerdelicious-21526117612dsith.png"
+                            class="menuCardOverlay" alt="Burger Overlay">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mt-4 d-flex justify-content-center align-items-center"
+                    data-aos="fade-up" data-aos-duration="800">
+                    <div class="menuCard">
+                        <div class="menuCardBody d-flex flex-column justify-content-right align-items-right pt-3 pe-3">
+                            <h5 class="card-title titan-one-regular">Double Beef Burger</h5>
+                            <p class="card-text poppins-regular">Cheesy burger with double beef </p>
+                            <p class="card-text prompt-bold font-20 mt-4 ">Php 100</p>
+                        </div>
+                        <img src="https://purepng.com/public/uploads/large/purepng.com-burgersandwhichfoodbreadcaviarburgerdelicious-21526117612dsith.png"
+                            class="menuCardOverlay" alt="Burger Overlay">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mt-4 d-flex justify-content-center align-items-center"
+                    data-aos="fade-up" data-aos-duration="800">
+                    <div class="menuCard">
+                        <div class="menuCardBody d-flex flex-column justify-content-right align-items-right pt-3 pe-3">
+                            <h5 class="card-title titan-one-regular">Double Beef Burger</h5>
+                            <p class="card-text poppins-regular">Cheesy burger with double beef </p>
+                            <p class="card-text prompt-bold font-20 mt-4 ">Php 100</p>
+                        </div>
+                        <img src="https://purepng.com/public/uploads/large/purepng.com-burgersandwhichfoodbreadcaviarburgerdelicious-21526117612dsith.png"
+                            class="menuCardOverlay" alt="Burger Overlay">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mt-4 d-flex justify-content-center align-items-center"
+                    data-aos="fade-up" data-aos-duration="800">
+                    <div class="menuCard">
+                        <div class="menuCardBody d-flex flex-column justify-content-right align-items-right pt-3 pe-3">
+                            <h5 class="card-title titan-one-regular">Double Beef Burger</h5>
+                            <p class="card-text poppins-regular">Cheesy burger with double beef </p>
+                            <p class="card-text prompt-bold font-20 mt-4 ">Php 100</p>
+                        </div>
+                        <img src="https://purepng.com/public/uploads/large/purepng.com-burgersandwhichfoodbreadcaviarburgerdelicious-21526117612dsith.png"
+                            class="menuCardOverlay" alt="Burger Overlay">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mt-4 d-flex justify-content-center align-items-center"
+                    data-aos="fade-up" data-aos-duration="800">
+                    <div class="menuCard">
+                        <div class="menuCardBody d-flex flex-column justify-content-right align-items-right pt-3 pe-3">
+                            <h5 class="card-title titan-one-regular">Double Beef Burger</h5>
+                            <p class="card-text poppins-regular">Cheesy burger with double beef </p>
+                            <p class="card-text prompt-bold font-20 mt-4 ">Php 100</p>
+                        </div>
+                        <img src="https://purepng.com/public/uploads/large/purepng.com-burgersandwhichfoodbreadcaviarburgerdelicious-21526117612dsith.png"
+                            class="menuCardOverlay" alt="Burger Overlay">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- section statement start -->
+    <section id="info">
+        <div class="statement">
+            <h3 class="titan-one-regular font-50">Choose and Enjoy!</h3>
+            <div id="horizontal"></div>
+            <p class="poppins-regular font-16">Experience a culinary journey like never before. Our modern and
+                delightful creations are crafted to satisfy your taste buds.</p>
+        </div>
+        <div class="options">
+            <div>
+                <i class="fa-solid fa-truck fa-beat fa-2xl" style="color: #323232;"> </i>
+                <h3>Fast Delivery</h3>
+                <div id="horizontal2"></div>
+                <p>Products or services are shipped or provided quickly, ensuring prompt and timely arrival to the
+                    customer.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-leaf fa-2xl" style="color: #323232;"></i>
+                <h3>Fresh Food</h3>
+                <div id="horizontal2"></div>
+                <p> food items are recently harvested, produced, or prepared, retaining their natural quality, taste,
+                    and nutritional value.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-utensils fa-2xl" style="color: #323232;"></i>
+                <h3>Experienced Chefs</h3>
+                <div id="horizontal2"></div>
+                <p>Culinary professionals with a significant amount of knowledge gained through years of working in the
+                    culinary industry.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-burger fa-2xl" style="color: #323232;"></i>
+                <h3>Variety of Burger</h3>
+                <div id="horizontal2"></div>
+                <p>Diverse selection of burger options, featuring different flavors, and styles to cater to various
+                    preferences and tastes.</p>
+            </div>
+    </section>
+    <!-- section statement end -->
+
+    <section class="maps">
+        <h1 class="titan-one-regular font-50">Our Branches</h1>
+        <div class="branchHorizontal"></div>
+        <div class="mapsLink">
+            <a href="#" class="tabLink caprasimo-regular">Tanauan</a>
+            <a href="#" class="tabLink caprasimo-regular">Lipa</a>
+            <a href="#" class="tabLink caprasimo-regular">Calamba</a>
+            <a href="#" class="tabLink caprasimo-regular">Sto.Tomas</a>
+        </div>
+
+        <div class="mapContainer content1">
+            <div class="mapEmbed">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123832.38055112434!2d121.02645833878!3d14.091228457313328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd6f72ec612957%3A0xb38df4072fe465d6!2sTanauan%2C%20Batangas!5e0!3m2!1sen!2sph!4v1702025291187!5m2!1sen!2sph"
+                    width="100%" height="300" style="border:0;  border-radius: 7px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contentInfo ps-3">
+                <h2 class="prompt-bold font-20">Tanauan City, Batangas</h2>
+                <h3> House of Burgers</h3>
+                <br />
+                <p>Trapiche, Tanauan City, Batangas</p>
+                <p>0123-456-7891</p>
+            </div>
+        </div>
+
+        <div class="mapContainer content2">
+            <div class="mapEmbed">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.274130187433!2d121.14856707423782!3d13.942276486469748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd6cbfacee4277%3A0x7701612328363c4!2sRobinsons%20Lipa!5e0!3m2!1sen!2sph!4v1702026310905!5m2!1sen!2sph"
+                    width="100%" height="300" style="border:0;  border-radius: 7px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contentInfo ps-3">
+                <h2 class="prompt-bold font-20">Lipa City, Batangas</h2>
+                <h3> Modern Burgeria </h3>
+                <br />
+                <p>President Jose P. Laurel Hwy, Lipa, Batangas</p>
+                <p>1122-3434-563-9090</p>
+            </div>
+        </div>
+
+        <div class="mapContainer content3">
+            <div class="mapEmbed">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.839320409773!2d121.150079488855!3d14.204184900000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd63000286fa21%3A0x18d0e2688547e2d8!2sSM%20City%20Calamba!5e0!3m2!1sen!2sph!4v1702027071873!5m2!1sen!2sph"
+                    width="100%" height="300" style="border:0;  border-radius: 7px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+
+                </iframe>
+            </div>
+            <div class="contentInfo ps-3">
+                <h2 class="prompt-bold font-20">Calamba City, Laguna</h2>
+                <h3> Modern Burgeria </h3>
+                <br />
+                <p>National Road, Brgy Real Calamba City Triangle, 4027 Laguna</p>
+                <p>1422-3214-663-8888</p>
+            </div>
+        </div>
+
+        <div class="mapContainer content4">
+            <div class="mapEmbed">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.513236597975!2d121.14556077113812!3d14.105887556098432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd650f7c73de4b%3A0x784250b120b02c35!2sSM%20City%20Sto.%20Tomas!5e0!3m2!1sen!2sph!4v1702027974900!5m2!1sen!2sph"
+                    width="100%" height="300" style="border:0; border-radius: 7px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contentInfo ps-3">
+                <h2 class="prompt-bold font-20">Sto. Tomas City, Batangas</h2>
+                <h3> Modern Burgeria </h3>
+                <br />
+                <p>20 Pan-Philippine Hwy, San Roque, Santo Tomas, 4232 Batangas</p>
+                <p>3452-3534-663-8538</p>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Left Content -->
+            <div class="footerContent">
+                <h5 class="mb-1 caprasimo-regular font-20">House of Burgers</h5>
+                <p class="mb-0 small">&copy; 2024 House of Burgers. All Rights Reserved.</p>
+                <p class="mb-0 small">Follow us:
+                    <a href="#" class=" text-decoration-none mx-1 poppins-regular">Facebook</a> |
+                    <a href="#" class=" text-decoration-none mx-1 poppins-regular">Twitter</a> |
+                    <a href="#" class=" text-decoration-none mx-1 poppins-regular">Instagram</a>
+                </p>
+            </div>
+
+            <!-- Right Content -->
+            <div>
+                <form class="d-flex align-items-center">
+                    <input type="text" class="form-control me-2" placeholder="Your message..." aria-label="Message">
+                    <button class="btn titan-one-regular text-white" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
