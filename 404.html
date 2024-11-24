@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -8,316 +9,337 @@
     <!-- BOXICONS -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&display=swap"
+        rel="stylesheet">
     <!-- CSS -->
     <style>
-      
-      @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
 
-      :root {
-        --header-height: 3.5rem;
-        --first-color: #ffd4e2;
-        --text-color: #260808;
-
-        --body-font: 'Space Grotesk', sans-serif;
-        --biggest-font-size: 2.375rem;
-        --normal-font-size: .938rem;
-        --smaller-font-size: .75rem;
-      }
-
-      @media screen and (min-width: 1024px) {
         :root {
-          --biggest-font-size: 5rem;
-          --normal-font-size: 1rem;
-          --smaller-font-size: .813rem;
+            --header-height: 3.5rem;
+            --first-color: #ffd4e2;
+            --text-color: #260808;
+
+            --body-font: 'Space Grotesk', sans-serif;
+            --biggest-font-size: 2.375rem;
+            --normal-font-size: .938rem;
+            --smaller-font-size: .75rem;
         }
-      }
 
-      * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-      }
-
-      body {
-        font-family: var(--body-font);
-        font-size: var(--normal-font-size);
-        font-weight: 500;
-        color: var(--text-color);
-      }
-
-      ul {
-        list-style: none;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-
-      .container {
-        max-width: 1024px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .main {
-        overflow: hidden; /* For the animations ScrollReveal */
-      }
-
-      .header {
-        position: fixed;
-        width: 100%;
-        background-color: transparent;
-        top: 0;
-        left: 0;
-        z-index: 100;
-      }
-
-      .nav {
-        height: var(--header-height);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-
-      .navLogo {
-        font-weight: 700;
-        color: var(--text-color);
-        display: inline-flex;
-      }
-
-   
-
-      @media screen and (max-width: 767px) {
-        .navMenu {
-          position: fixed;
-          background-color: var(--first-color);
-          left: 0;
-          top: -100%;
-          width: 100%;
-          padding: 5rem 0 4rem;
-          border-radius: 0 0 1.5rem 1.5rem;
-          box-shadow: 0 2px 4px hsla(38, 4%, 15%, .15);
-          transition: .4s;
+        @media screen and (min-width: 1024px) {
+            :root {
+                --biggest-font-size: 5rem;
+                --normal-font-size: 1rem;
+                --smaller-font-size: .813rem;
+            }
         }
-      }
 
-      .navList {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        row-gap: 2rem;
-      }
 
-      .navLink {
-        color: var(--text-color);
-      }
 
-      .navClose {
-        position: absolute;
-        top: 1rem;
-        right: 1.5rem;
-        font-size: 1.5rem;
-        color: var(--text-color);
-        cursor: pointer;
-      }
-
-      .showMenu {
-        top: 0;
-      }
-
-      .home {
-        background-color: var(--first-color);
-        padding: 9rem 0 2rem;
-        height: 100vh;
-        display: grid;
-      }
-
-      .homeContainer {
-        display: grid;
-        align-content: center;
-        row-gap: 2.5rem;
-      }
-
-      .homeData {
-        text-align: center;
-      }
-
-      .homeTitle {
-        font-size: var(--biggest-font-size);
-        margin: .75rem 0;
-      }
-
-      .homeButton {
-        margin-top: 2rem;
-        display: inline-block;
-        background-color: var(--text-color);
-        color: #fff;
-        padding: .80rem 1.5rem;
-        border-radius: 3rem;
-        transition: .4s;
-      }
-
-      .homeButton:hover {
-        box-shadow: 0 4px 12px hsla(38, 69%, 8%, .2);
-      }
-
-      .homeImg img {
-        width: 230px;
-        animation: floaty 1.8s infinite alternate;
-      }
-
-      .homeImg {
-        justify-self: center;
-      }
-
-      .homeShadow {
-        width: 130px;
-        height: 24px;
-        background-color: hsla(38, 21%, 19%, .16);
-        margin: 0 auto;
-        border-radius: 50%;
-        filter: blur(7px);
-        animation: shadow 1.8s infinite alternate;
-      }
-
-      .homeFooter {
-        display: flex;
-        justify-content: center;
-        column-gap: .5rem;
-        font-size: var(--smaller-font-size);
-        align-self: flex-end;
-      }
-
-      /* Animate ghost */
-      @keyframes floaty {
-        0% {
-          transform: translateY(0);
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
         }
-        100% {
-          transform: translateY(15px);
-        }
-      }
 
-      @keyframes shadow {
-        0% {
-          transform: scale(1, 1);
+        body {
+            font-family: var(--body-font);
+            font-size: var(--normal-font-size);
+            font-weight: 500;
+            color: var(--text-color);
         }
-        100% {
-          transform: scale(.85, .85);
-        }
-      }
 
-      @media screen and (max-width: 320px) {
-        .home {
-          padding-top: 7rem;
+        .fontBig{
+            font-family: "Big Shoulders Stencil Text", sans-serif;
+            font-size: 30px;
         }
-      }
 
-      /* For medium devices */
-      @media screen and (min-width: 767px) {
-        .nav {
-          height: calc(var(--header-height) + 1.5rem);
-        }
-        .navToggle, 
-        .navClose {
-          display: none;
-        }
-        .navList {
-          flex-direction: row;
-          column-gap: 3.5rem;
-        }
-      }
 
-      /* For large devices */
-      @media screen and (min-width: 1024px) {
-        .homeContainer {
-          grid-template-columns: repeat(2, 1fr);
-          align-items: center;
-          column-gap: 2rem;
+        ul {
+            list-style: none;
         }
-        .homeData {
-          text-align: initial;
-        }
-        .homeImg img {
-          width: 400px;
-        }
-        .homeShadow {
-          width: 250px;
-          height: 40px;
-        }
-      }
 
-      @media screen and (min-width: 1048px) {
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
         .container {
-          margin-left: auto;
-          margin-right: auto;
+            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
         }
-      }
 
-      /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
-      @media screen and (min-width: 2048px) {
-        body {
-          zoom: 1.7;
+        .main {
+            overflow: hidden;
+            /* For the animations ScrollReveal */
+        }
+
+        .header {
+            position: fixed;
+            width: 100%;
+            background-color: transparent;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        .nav {
+            height: var(--header-height);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .navLogo {
+            font-weight: 700;
+            color: var(--text-color);
+            display: inline-flex;
+        }
+
+
+
+        @media screen and (max-width: 767px) {
+            .navMenu {
+                position: fixed;
+                background-color: var(--first-color);
+                left: 0;
+                top: -100%;
+                width: 100%;
+                padding: 5rem 0 4rem;
+                border-radius: 0 0 1.5rem 1.5rem;
+                box-shadow: 0 2px 4px hsla(38, 4%, 15%, .15);
+                transition: .4s;
+            }
+        }
+
+        .navList {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+        }
+
+        .navLink {
+            color: var(--text-color);
+        }
+
+        .navClose {
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-size: 1.5rem;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        .showMenu {
+            top: 0;
         }
 
         .home {
-          height: initial;
-          row-gap: 4rem;
+            background-color: var(--first-color);
+            padding: 9rem 0 2rem;
+            height: 100vh;
+            display: grid;
         }
-      }
 
-      /* For 4K resolutions (3840 x 2160, 4096 x 2160) */
-      @media screen and (min-width: 3840px) {
-        body {
-          zoom: 3.1;
+        .homeContainer {
+            display: grid;
+            align-content: center;
+            row-gap: 2.5rem;
         }
-      }
+
+        .homeData {
+            text-align: center;
+        }
+
+        .homeTitle {
+            font-size: var(--biggest-font-size);
+            margin: .75rem 0;
+        }
+
+        .homeButton {
+            margin-top: 2rem;
+            display: inline-block;
+            background-color: var(--text-color);
+            color: #fff;
+            padding: .80rem 1.5rem;
+            border-radius: 3rem;
+            transition: .4s;
+        }
+
+        .homeButton:hover {
+            box-shadow: 0 4px 12px hsla(38, 69%, 8%, .2);
+        }
+
+        .homeImg img {
+            width: 230px;
+            animation: floaty 1.8s infinite alternate;
+        }
+
+        .homeImg {
+            justify-self: center;
+        }
+
+        .homeShadow {
+            width: 130px;
+            height: 24px;
+            background-color: hsla(38, 21%, 19%, .16);
+            margin: 0 auto;
+            border-radius: 50%;
+            filter: blur(7px);
+            animation: shadow 1.8s infinite alternate;
+        }
+
+        .homeFooter {
+            display: flex;
+            justify-content: center;
+            column-gap: .5rem;
+            font-size: var(--smaller-font-size);
+            align-self: flex-end;
+        }
+
+        /* Animate ghost */
+        @keyframes floaty {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(15px);
+            }
+        }
+
+        @keyframes shadow {
+            0% {
+                transform: scale(1, 1);
+            }
+
+            100% {
+                transform: scale(.85, .85);
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            .home {
+                padding-top: 7rem;
+            }
+        }
+
+        /* For medium devices */
+        @media screen and (min-width: 767px) {
+            .nav {
+                height: calc(var(--header-height) + 1.5rem);
+            }
+
+            .navToggle,
+            .navClose {
+                display: none;
+            }
+
+            .navList {
+                flex-direction: row;
+                column-gap: 3.5rem;
+            }
+        }
+
+        /* For large devices */
+        @media screen and (min-width: 1024px) {
+            .homeContainer {
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                column-gap: 2rem;
+            }
+
+            .homeData {
+                text-align: initial;
+            }
+
+            .homeImg img {
+                width: 400px;
+            }
+
+            .homeShadow {
+                width: 250px;
+                height: 40px;
+            }
+        }
+
+        @media screen and (min-width: 1048px) {
+            .container {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+        @media screen and (min-width: 2048px) {
+            body {
+                zoom: 1.7;
+            }
+
+            .home {
+                height: initial;
+                row-gap: 4rem;
+            }
+        }
+
+        /* For 4K resolutions (3840 x 2160, 4096 x 2160) */
+        @media screen and (min-width: 3840px) {
+            body {
+                zoom: 3.1;
+            }
+        }
     </style>
-  </head>
-  <body>
-   
+</head>
+
+<body>
+
     <!-- HEADER -->
     <header class="header">
-      <nav class="nav container p-4">
-        <a href="#" class="navLogo">
-          LeaCydeaPiga
-        </a>
-      </nav>
+        <nav class="nav container p-4 fontBig">
+            <a href="#" class="navLogo">
+                LeaCydeaPiga
+            </a>
+        </nav>
     </header>
 
     <!--Main-->
     <main class="main">
-      <section class="home">
-        <div class="homeContainer container">
-          <div class="homeData">
-            <span class="homeSubtitle">Error 404</span>
-            <h1 class="homeTitle">Hey Buddy, I'm Zagu</h1>
-            <p class="homeDescription">
-              We sniffed everywhere, but this page ran off with the squirrels!
-            </p>
-            <a href="#" class="homeButton">
-              Go Home
-            </a>
-          </div>
+        <section class="home">
+            <div class="homeContainer container">
+                <div class="homeData">
+                    <span class="homeSubtitle">Error 404</span>
+                    <h1 class="homeTitle">Hey Buddy, I'm Zagu</h1>
+                    <p class="homeDescription">
+                        We sniffed everywhere, but this page ran off with the squirrels!
+                    </p>
+                    <a href="#" class="homeButton">
+                        Go Home
+                    </a>
+                </div>
 
-          <div class="homeImg">
-            <img src="img/zagu.png" alt="">
-            <div class="homeShadow"></div>
-          </div>
-        </div>
+                <div class="homeImg">
+                    <img src="img/zagu.png" alt="">
+                    <div class="homeShadow"></div>
+                </div>
+            </div>
 
-        <footer class="homeFooter">
-          <span>0956 *** ****</span>
-          <span>|</span>
-          <span>pleacydea@gmail.com</span>
-        </footer>
-      </section>
+            <footer class="homeFooter">
+                <span>0956 *** ****</span>
+                <span>|</span>
+                <span>pleacydea@gmail.com</span>
+            </footer>
+        </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -328,15 +350,16 @@
 
 
     <script>
-   
-     //Scroll reveal 
-    const sr = ScrollReveal({
-      distance: '90px',
-      duration: 3000,
-    })
 
-    sr.reveal(`.homeData`, {origin: 'top', delay: 400})
-    sr.reveal(`.homeImg`, {origin: 'bottom', delay: 600})
-  sr.reveal(`.homeFooter`, {origin: 'bottom', delay: 800})</script>
-  </body>
-  </html>
+        //Scroll reveal 
+        const sr = ScrollReveal({
+            distance: '90px',
+            duration: 3000,
+        })
+
+        sr.reveal(`.homeData`, { origin: 'top', delay: 400 })
+        sr.reveal(`.homeImg`, { origin: 'bottom', delay: 600 })
+        sr.reveal(`.homeFooter`, { origin: 'bottom', delay: 800 })</script>
+</body>
+
+</html>
