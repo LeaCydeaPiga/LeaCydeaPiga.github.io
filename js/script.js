@@ -46,9 +46,9 @@ $("#change-2").on('click', function() {
     swal("", "Successfully changed to GREEN!", "success");
 });
 $("#change-3").on('click', function() {  
-    $("body").css("--custom-text", "#ffd859");
-    $("body").css("--custom-bg","#fcefb4");
-    swal("", "Successfully changed to YELLOW!", "success");
+    $("body").css("--custom-text", "#889fa5");
+    $("body").css("--custom-bg","#889fa5");
+    swal("", "Successfully changed to GRAY!", "success");
 });
 $("#change-4").on('click', function() {  
     $("body").css("--custom-text", "#f3a6c0");

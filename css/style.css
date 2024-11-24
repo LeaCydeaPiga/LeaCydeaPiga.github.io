@@ -345,7 +345,11 @@ button {
 }
 
 /* work section */
-
+#work button:hover {
+	box-shadow: 0 1px 15px 0 rgba(0, 0, 25, 0.4);
+	transform: translate(-0.1%);
+	background: var(--custom-bg);
+}
 
 /* change color */
 #customize button{
@@ -382,7 +386,7 @@ button {
 	border-radius: 50%;
 	width: 30px;
 	height: 30px;
-	background: #ffd859;	
+	background: #889fa5;	
 }
 #customize .btn-4{
 	border-radius: 50%;
