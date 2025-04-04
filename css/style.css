@@ -427,3 +427,11 @@ button {
 	background: #f1f1f1; /* Color of the scrollbar track */
 	border-radius: 10px; /* Rounded corners */
 }
+
+.preview-iframe {
+    width: 100%;
+    height: 200px; 
+    border: none;
+    overflow: hidden;
+    pointer-events: none; /* Prevents interaction */
+}

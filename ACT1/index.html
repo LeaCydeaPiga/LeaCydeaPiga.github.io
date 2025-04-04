@@ -17,6 +17,7 @@
     rel="stylesheet">
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/mdb-ui-kit/css/mdb.min.css" rel="stylesheet">
   <style type="text/css">
     .font-dosis {
       font-family: "Dosis", sans-serif;
@@ -245,6 +246,11 @@
       background: transparent;
       border-radius: 10px;
     }
+
+
+
+
+    /* new */
   </style>
 </head>
 
@@ -341,6 +347,9 @@
   <!-- popular-places section start -->
   <section id="popularPlaces">
     <div class="container mb-5 mt-3">
+      <div class="row mt-5 mb-5">
+        <p class="font-dosis font-50 fw-bold text-uppercase text-center"> top destinations</p>
+      </div>
       <div class="row">
         <div class="col-md-4">
           <div class="card">
@@ -387,7 +396,7 @@
               class="img-fluid">
             <div class="card-body">
               <h2 class="font-dosis font-28 text-uppercase fw-bold">
-                El Nido Island Hopping: <span class="text-fav">15km</span> <br> route
+                El Nido Island Hopping: <span class="text-fav">15km</span>  route
               </h2>
               <p class="font-dosis font-22 text-secondary">
                 Sail through El Nido’s turquoise waters and visit its world-famous lagoons, secret beaches, and coral
@@ -405,31 +414,66 @@
   </section>
 
   <!-- popular-places section end -->
-  <!-- contact-us section start -->
-  <section id="contact">
-    <div class="container text-center py-4">
-      <h2 class="font-dosis font-28 fw-bold text-uppercase">follow us on instagram</h2>
-      <p class="mt-5 font-sat font-50 text-fav fw-bold">
-        PalaOne
-      </p>
-      <p class="font-dosis font-22 fw-bold text-uppercase">
-        call us: 123 456 789
-      </p>
-      <p class="font-dosis font-22 text-secondary">
-        From the hidden coves of Port Barton to the vibrant coral gardens of Tubbataha Reefs, each spot offers something
-        unique to explore. Get ready to experience a blend of rich biodiversity, pristine beaches, and unforgettable
-        landscapes that will leave you in awe.
-      </p>
-      <div class="d-flex justify-content-center mt-5">
-        <i class="fa-brands fa-instagram font-32 me-5"></i>
-        <i class="fa-brands fa-twitter font-32 me-5"></i>
-        <i class="fa-brands fa-square-facebook font-32 me-5"></i>
+
+  <!-- other places section start -->
+  <section id="otherPlaces my-5">
+    <div class="container">
+      <div class="row my-5">
+        <p class="font-50 font-dosis fw-bold text-uppercase text-center">Other places</p>
+      </div>
+      <div class="row g-3">
+
+        <div class="col-md-3 col-6">
+          <div class="card">
+            <img src="https://handluggageonly.co.uk/wp-content/uploads/2014/11/Palawan-Philippines05.jpg" alt="Image 1"
+              class="card-img-top w-100 h-100 object-fit-cover rounded" />
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="card">
+            <img
+              src="https://www.kkday.com/en/blog/wp-content/uploads/ph_Philippines_Palawan_El-Nido_Ashutterstock_759335716-1.jpg"
+              alt="Image 2" class="card-img-top w-100 h-100 object-fit-cover rounded" />
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="card">
+            <img src="https://handluggageonly.co.uk/wp-content/uploads/2014/11/Palawan-Philippines05.jpg" alt="Image 3"
+              class="card-img-top w-100 h-100 object-fit-cover rounded" />
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="card">
+            <img
+              src="https://www.kkday.com/en/blog/wp-content/uploads/ph_Philippines_Palawan_El-Nido_Ashutterstock_759335716-1.jpg"
+              alt="Image 4" class="card-img-top w-100 h-100 object-fit-cover rounded" />
+          </div>
+        </div>
+      </div>
+
+      <div id="carouselExampleFade" class="carousel slide carousel-fade mt-5 rounded-2" style="max-height: 50vh; overflow: hidden;" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://gttp.imgix.net/225479/x/0/shutterstock-567560212.jpg" class=" d-block img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.squarespace-cdn.com/content/v1/5adf25b575f9ee4695083a1a/1525747471950-7XJ8ACLINRK87UPDMTNU/IMG_5979.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.divergenttravelers.com/wp-content/uploads/edit-0930-scaled.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        
       </div>
     </div>
   </section>
+  <!-- other places end -->
+
+  <!-- contact-us section start -->
 
   <section>
-    <div class="container">
+    <div class="container mt-5 py-5">
       <div class="row">
         <div class="col-md-4 col-12">
           <div class="mapContainer p-3">
@@ -466,7 +510,27 @@
         </div>
       </div>
     </div>
-
+  </section>
+  <section id="contact">
+    <div class="container text-center py-4">
+      <h2 class="font-dosis font-28 fw-bold text-uppercase">follow us on instagram</h2>
+      <p class="mt-5 font-sat font-50 text-fav fw-bold">
+        PalaOne
+      </p>
+      <p class="font-dosis font-22 fw-bold text-uppercase">
+        call us: 123 456 789
+      </p>
+      <p class="font-dosis font-22 text-secondary">
+        From the hidden coves of Port Barton to the vibrant coral gardens of Tubbataha Reefs, each spot offers something
+        unique to explore. Get ready to experience a blend of rich biodiversity, pristine beaches, and unforgettable
+        landscapes that will leave you in awe.
+      </p>
+      <div class="d-flex justify-content-center mt-5">
+        <i class="fa-brands fa-instagram font-32 me-5"></i>
+        <i class="fa-brands fa-twitter font-32 me-5"></i>
+        <i class="fa-brands fa-square-facebook font-32 me-5"></i>
+      </div>
+    </div>
   </section>
 
 
